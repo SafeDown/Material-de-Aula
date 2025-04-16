@@ -14,3 +14,17 @@ nome = input(" Qual o seu primeiro nome ")
 sobrenome = input(" E o seu Sobrenome? ")
 
 print(" Olá " + nome + sobrenome)
+
+############
+
+Questão 1
+Crie um programa que peça para o usuário digitar a altura e a base de um triângulo e calcule e
+exiba qual é a sua área. As saídas do programa devem ser semelhantes às apresentadas no
+quadro abaixo.
+
+Resposta:
+altura = float(input("Digite o valor da altura: "))
+base = float(input("Digite o valor da base: "))
+area = float(altura*base)/2
+
+print(area)
