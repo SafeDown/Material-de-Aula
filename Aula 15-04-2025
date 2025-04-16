@@ -1,0 +1,16 @@
+cidade = "Nome da sua Cidade:"
+estado = "Nome do seu Estado:"
+
+
+
+nCidade = input(" Qual a sua Cidade? ")
+print(nCidade)
+
+nEstado = input(" Qual o seu Estado? ")
+print(nEstado)
+
+
+nome = input(" Qual o seu primeiro nome ")
+sobrenome = input(" E o seu Sobrenome? ")
+
+print(" Olá " + nome + sobrenome)
