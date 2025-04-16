@@ -10,3 +10,13 @@ nota2 = float(input("nota 2:"))
 
 media=(nota1+nota2)/2
 print(media)
+
+###########
+
+altura = float(input("Altura:"))
+base = float(input("Base:"))
+area = (altura*base)/2
+
+
+media=(nota1+nota2)/2
+print(media)
