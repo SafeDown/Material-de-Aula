@@ -1,0 +1,63 @@
+numero= int(input("digite o mumero julgado a ser julgado: "))
+if(numero %2 ==0):
+    print("VC É PAR")
+else:
+    print("VC É IMPAR")
+
+    #################
+
+media = float(input("Digite a media: "))
+if (7<=media):
+    print("aprovado")
+    
+if (4<=media and media <7):
+    print("Proval final")
+    
+if (media<4):
+    print("Reprovado")
+
+#################
+n1 = int(input("Digite o primeiro numero: "))
+n2 = int(input("Digite o segundo numero: "))
+n3 = int(input("Digite o terceiro numero: "))
+
+
+if (n1>n2>n3):
+    print("maior nota é: ",n1)
+    
+if (n2>n1>n3):
+    print("maior nota é: ",n2)
+    
+if (n3>n2>n1):
+    print("maior nota é: ",n3)
+    
+if (n1<n2<n3):
+    print("menor nota é: ",n1)
+    
+if (n2<n1<n3):
+    print("menor nota é: ",n2)
+    
+if (n3<n2<n1):
+    print("menor nota é: ",n3)
+
+    ########3
+
+    salario = float(input("salario: "))
+imposto = 0
+
+if (salario<1000):
+    imposto = 0
+if (1000<=salario<=2000):
+    imposto=100
+if(salario>=3000):
+    imposto =200
+    
+print("seu imposto é: ",imposto)
+
+
+########
+
+
+
+
+
