@@ -1,0 +1,75 @@
+freq = float(input("INFORME SUA FREQUÊNCIA: "))
+media = float(input("INFORME SUA MÉDIA: "))
+
+if (media>=7 and freq>=75):
+    print("*****APROVADO*****")
+else:
+    print("*****REQUISITOS NÃO ATINGIDOS")
+
+
+    ############################
+
+    cHora = int(input("INFORME SUA CARGA HORÁRIA: "))
+hFalta = int(input("INFORME SUAS FALTAS EM HORAS: "))
+n1 = float(input("INFORME SUA PRIMERIA NOTA: "))
+n2 = float(input("INFORME SUA SEGUNDA NOTA: "))
+n3 = float(input("INFORME SUA TERCEIRA NOTA: "))
+
+freq = hFalta/cHora*100
+media = (n1+n2+n3)/3
+print("NUMERO DE FALTAS: ",freq)
+print("SUA MÉDIA É: ",media)
+
+
+if (freq<=25 and media>=7):
+    print("*****APROVADO*****")
+
+
+else:
+    print("*****REQUISITOS NÃO ATINGIDOS")
+
+
+    ############################
+
+segunda = 1
+quarta = 3
+sexta = 5
+
+duvidaCruel = int(input("HJ TEM TREINO COM O CARIANE?, DIGITE O VALOR DA SEMANA: "))
+
+
+if (duvidaCruel==1):
+    print("TREINO DE PERNA KKKK SORRY")
+      
+    
+if (duvidaCruel==2):
+    print("TREINO DE FRANGO BB (PEITO)")
+       
+    
+if (duvidaCruel==3):
+    print("TREINA AS BRACETAS BRLLL")
+     
+#################################
+
+
+conceito = str(input("aQUI: "))
+
+if (conceito == "A" and "B" ):
+    print("Medalha= OURO")
+    
+if (conceito == "C" and "D" ):
+    print("Medalha= PRATA")
+    
+if (conceito == "E" ):
+    print("Medalha= BRONZE")
+    
+
+
+
+
+
+
+
+    
+
+    
