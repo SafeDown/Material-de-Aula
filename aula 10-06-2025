@@ -1,0 +1,14 @@
+a=int(input("valor de pao menor: "))
+b=int(input("valor de pao maior: "))
+
+if a==b:
+    print(a)
+    
+elif b>a:
+    for x in range(a,b):
+        print(x)
+else:
+    for x in range(b,a):
+        print(x)
+    
+    
