@@ -1,0 +1,89 @@
+import time
+acervo=[]
+quantidade=[]
+
+
+def menu():
+    print("Olá! Seja Bem Vindo!, digite o numero correspondente a função desejada: ")
+    time.sleep(2)
+    print("[1] - Cadastrar livros [2] - Listar Livros [3] - Edicionar Exemplares")
+    print("[4] - Consultar quantidade disponível  [5] - Realizar emprestimo")
+    entrada = int(input("Digite o número aqui: "))
+    return entrada
+    
+
+
+def cadastrar_livros():
+    print("Cadastrar livros")
+    livro = input("Informe o titulo do livro a ser cadastrado: ")
+    acervo.append(livro)
+    unidades = int(input("Qual a quantidades serão adicionadas?: "))
+    quantidade.append(unidades)
+    print("Aguarde um momento...")
+    time.sleep(2)
+    print(f"Livro : {livro} cadatrado com sucesso!")
+    time.sleep(2)
+    
+def listar_livros():
+    print("Listar Livros")
+    for i in range(len(acervo)):
+        print(f"TITULO: ['  {acervo[i]}  '], QUANTIDADE: [  {quantidade[i]}  ], CÓDIGO: [  {i}  ]")
+            
+def adicionar_exemplares():
+    print("Edicionar Exemplares")
+    codigo = int(input("Qual o código do livro?: "))
+    novo = int(input("Qual a quantidade de novos livros?: "))
+    quantidade[codigo] = quantidade[codigo] + novo
+    print("Aguarde um momento...")
+    time.sleep(2)
+    print(f"Livro(s)  [ {acervo[codigo]} ] adicionado com sucesso!!")
+    time.sleep(2)
+    
+def consultar_disponivel():
+    print("Consultar quantidade disponível")
+    codigo = int(input("Qual o código do livro?: "))
+    if quantidade[codigo] == 0:
+        print("Aguarde um momento...")
+        time.sleep(2)
+        print(f"TITULO: ['  {acervo[codigo]}  '], QUANTIDADE: [  {quantidade[codigo]}  ] NÃO DISPONÍVEIS")
+        time.sleep(2)
+    else:
+        print("Aguarde um momento...")
+        time.sleep(2)
+        print(f"TITULO: ['  {acervo[codigo]}  '], QUANTIDADE: [  {quantidade[codigo]}  ]  DISPONÍVEIS")
+        time.sleep(2)
+      
+def realizar_emprestimo():
+    print("Realizar emprestimo")
+    codigo = int(input("Qual o código do livro?: "))
+    if quantidade[codigo] == 0:
+        print("Aguarde um momento...")
+        time.sleep(2)
+        print(f"TITULO: ['  {acervo[codigo]}  '], QUANTIDADE: [  {quantidade[codigo]}  ] NÃO DISPONÍVEIS")
+        time.sleep(2)
+    else:
+        print("Aguarde um momento...")
+        time.sleep(2)
+        print(f"TITULO: ['  {acervo[codigo]}  ']")
+        print("EMPRÉSTIMO REALIZADO!!")
+        quantidade[codigo] = quantidade[codigo] -1
+        time.sleep(2)
+    
+escolha_menu =-1
+while escolha_menu != 0:
+    escolha_menu = menu()
+    if escolha_menu == 1:
+        cadastrar_livros()
+    elif escolha_menu == 2:
+        listar_livros()
+    elif escolha_menu == 3:
+        adicionar_exemplares()
+    elif escolha_menu == 4:
+        consultar_disponivel()
+    elif escolha_menu == 5:
+        realizar_emprestimo()
+    else:
+        print("Obrigado pela visita")
+        time.sleep(2)
+    
+        
